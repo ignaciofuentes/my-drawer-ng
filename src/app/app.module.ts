@@ -7,6 +7,7 @@ import { AppComponent } from "./app.component";
 import { HomeComponent } from "./home/home.component";
 import { BrowseComponent } from "./browse/browse.component";
 import { SearchComponent } from "./search/search.component";
+import { SettingsComponent } from "./settings/settings.component";
 
 @NgModule({
   bootstrap: [AppComponent],
@@ -15,7 +16,13 @@ import { SearchComponent } from "./search/search.component";
     NativeScriptModule,
     NativeScriptUISideDrawerModule
   ],
-  declarations: [AppComponent, HomeComponent, BrowseComponent, SearchComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    BrowseComponent,
+    SearchComponent,
+    SettingsComponent
+  ],
   schemas: [NO_ERRORS_SCHEMA]
 })
 export class AppModule {}
